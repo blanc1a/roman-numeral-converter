@@ -30,8 +30,11 @@ function inputToRoman(num) {
   let result = "";
   let romanValues = Object.keys(romanNumerals);
 
+  //forEach Loop iteriert durch jedes Element des romanValues Obj
   romanValues.forEach((key) => {
+    //prüft, ob der Wert der aktuellen römischen Ziffer kleiner/gleich num ist
     while (romanNumerals[key] <= num) {
+      //der Wert der römischen Ziffer wird von num subtrahiert, und die römische Ziffer (key) wird an result angehängt => Prozess wiederholt sich, bis der Wert der römischen Ziffer nicht mehr von num abgezogen werden kann
       num -= romanNumerals[key];
       result += key;
     }
