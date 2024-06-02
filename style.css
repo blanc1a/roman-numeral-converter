@@ -1,0 +1,69 @@
+@import url(https://fonts.bunny.net/css?family=alike:400|architects-daughter:400|raleway:400);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #272a31; */
+  background-image: url(./adrianna-geo-1rBg5YSi00c-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Alike", serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.formContainer {
+  background: rgba(80, 62, 50, 0.9);
+  border: solid 3px #6e5849;
+  box-shadow: 0px 0px 15px 0px #6e5849;
+  padding: 1rem 1.5rem;
+
+  width: 544px;
+  text-align: center;
+}
+
+.innerFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 20px 30px;
+}
+
+input,
+button {
+  all: unset;
+}
+
+input {
+  border-bottom: solid 2px #8f5f2e;
+  width: 178px;
+}
+
+button {
+  background: #8f5f2e;
+  width: 170px;
+  padding: 0.3rem 0.6rem;
+}
+
+.outputContainer {
+  margin-top: 1rem;
+}
